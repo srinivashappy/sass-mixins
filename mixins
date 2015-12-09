@@ -6,6 +6,7 @@
   -ms-border-radius: $radius;
   -o-border-radius: $radius;
 }
+//useage
 .border{
 @include border-radius(10px);
 }
@@ -27,8 +28,22 @@
        @content;
     }
 }
+//useage
 @include placeHolder(){
         color:$color-b3b2b2;
         font-family: $font-vrdna;
         font-size: 14px;
   };
+  
+//box-shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+  }
+  //useage
+  .test{
+    @include box-shadow(0, 1px, 1px, rgba(0, 0, 0, 0.075), inset);
+  }
+  
