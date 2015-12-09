@@ -1,0 +1,34 @@
+//border-radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+.border{
+@include border-radius(10px);
+}
+//placeholder
+@mixin placeHolder{
+    &::-webkit-input-placeholder {
+       @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+       @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       @content;
+    }
+
+    &:-ms-input-placeholder {  
+       @content;
+    }
+}
+@include placeHolder(){
+        color:$color-b3b2b2;
+        font-family: $font-vrdna;
+        font-size: 14px;
+  };
