@@ -48,4 +48,16 @@
     or
     @include box-shadow (2px, -2px, 13px, rgba(48, 48, 48, 0.6),inset );
   }
-  
+//extends
+%tablecell{
+    display: table-cell;
+    vertical-align: top;
+}
+//usages
+  .ds-dctr-leftsection{
+       @extend %tablecell;
+    }
+    .ds-dctr-rightsection{
+        @extend %tablecell;
+        width: 100px;
+    }
