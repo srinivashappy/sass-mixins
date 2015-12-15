@@ -61,7 +61,8 @@
         @extend %tablecell;
         width: 100px;
     }
-    %clearfix {
+//clear fix sass 
+%clearfix {
   &:after {
     content: "";
     display: table;
