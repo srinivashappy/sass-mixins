@@ -82,4 +82,3 @@
   ...
   @extend %clearfix;
 }
-}
