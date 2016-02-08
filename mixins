@@ -29,12 +29,13 @@
     }
 }
 //useage
+.classname{
 @include placeHolder(){
         color:$color-b3b2b2;
         font-family: $font-vrdna;
         font-size: 14px;
   };
-  
+}
 //box-shadow
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
 
@@ -56,6 +57,7 @@
 //usages
   .ds-dctr-leftsection{
        @extend %tablecell;
+       vertical-align:middle;
     }
     .ds-dctr-rightsection{
         @extend %tablecell;
@@ -75,10 +77,8 @@
   }
   //usages of clear fix
 .wrap {
-  ...
   @extend %clearfix;
 }
 .main-header {
-  ...
   @extend %clearfix;
 }
