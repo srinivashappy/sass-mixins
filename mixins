@@ -1,3 +1,10 @@
+$fontarial: arial;
+$fontS14: 14px;
+.xyz{
+font-family:fontarial;
+font-size:$fontS14;
+}
+
 //border-radius
 @mixin border-radius($radius) {
   border-radius: $radius;
